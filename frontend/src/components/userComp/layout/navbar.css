@@ -1,0 +1,253 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* CSS */
+
+body {
+    font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* background-color: #252525; */
+    /* background-image: url('../../image/coffee_bg.jpg'); */
+    background-color: red;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* display: grid; */
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* --------------------------flex------------------------------------- */
+
+.flex-container-1 {
+    flex-wrap: wrap;
+    display: flex;
+    background: #252525;
+    flex-direction: column;
+    /* width: 800px; */
+    height: 100px;
+    /* width: 390px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container-2 {
+    flex-wrap: wrap;
+    display: flex;
+    background-image: linear-gradient(#363535, #252525);
+    flex-direction: row;
+    /* width: 800px; */
+    height: 69px;
+    /* width: 390px; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* --------------------------Button------------------------------------- */
+
+
+/* <button class="button-30" role="button">Button 30</button> */
+
+
+/* CSS */
+
+.button-30 {
+    align-items: center;
+    appearance: none;
+    /* background-color: #252525; */
+    background-image: linear-gradient(#393939, #252525);
+    border-radius: 0px;
+    border-color: #424242;
+    border-width: 0;
+    /* box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#191919 0 -3px 0 inset; */
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 40px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 14px;
+}
+
+.button-30:focus {
+    box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #191919 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    /* box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #191919 0 -3px 0 inset; */
+    transform: translateY(-2px);
+}
+
+.button-30:active {
+    box-shadow: #d6d6e7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+/* -------------------- cards --------------------------------------- */
+
+#cards {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 1000px;
+    padding: 1em 0em;
+    place-self: center;
+    position: relative;
+    width: calc(100% - 2em);
+    z-index: 2;
+    margin: auto;
+}
+
+.BoxA {
+    display: inline-block;
+    color: white;
+    border-color: #424242;
+    border-width: 1px;
+    border-style: solid;
+    width: 390px;
+    height: 350px;
+    border-radius: 10px 10px 10px 10px;
+    margin: auto;
+    padding: 10px;
+    -webkit-box-shadow: 10px 10px 10px 10px #363535;
+    box-shadow: 2px 2px 2px 2px #242424;
+    /* background-color: #252525; */
+    background-image: linear-gradient(#363535, #252525);
+    opacity: 0.9;
+}
+
+
+/* ------------------------------------------------------------------------ */
+
+@media screen and (min-width: 391px) {
+    .navbarhead {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .navbarhead-button {
+        background-color: linear-gradient(#393939, #252525);
+        width: 30px;
+    }
+    .navbarfooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .menufooter {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .navbarhead {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-image: linear-gradient(#393939, #252525);
+    }
+    .navbarfooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .menufooter {
+        width: 200px;
+    }
+    .button-30 {
+        align-items: center;
+        appearance: none;
+        background-image: linear-gradient(#393939, #252525);
+        border-radius: 0px;
+        border-color: #424242;
+        border-width: 0;
+        box-sizing: border-box;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "SF Pro Text", "SF Pro gitIcons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        height: 40px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow 0.15s, transform 0.15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 14px;
+    }
+    .button-30:focus {
+        box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #191919 0 -3px 0 inset;
+    }
+    .button-30:hover {
+        transform: translateY(-2px);
+    }
+    .button-30:active {
+        box-shadow: #d6d6e7 0 3px 7px inset;
+        transform: translateY(2px);
+    }
+}

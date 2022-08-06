@@ -1,0 +1,11 @@
+.box {
+    height: 100px;
+    width: 428px;
+    margin: auto;
+    padding-top: 200px;
+}
+
+.bg-home {
+    background-color: #252525;
+    opacity: 0.9;
+}

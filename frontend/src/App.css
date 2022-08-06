@@ -1,0 +1,52 @@
+body {
+    font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* background-color: #252525; */
+    background-image: url("./components/image/coffee_bg.jpg");
+    /* background-color: red; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* display: grid; */
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.bgstart {
+    background-image: url("./components/image/bg-spoon.jpg");
+    /* background-image: url("./components/image/bg-donut-chart.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    padding: 0px 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.bg-admin {
+    /* background-image: url("./components/image/bg-spoon.jpg"); */
+    background-image: url("./components/image/bg-caffeine-structure.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    padding: 0px 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
